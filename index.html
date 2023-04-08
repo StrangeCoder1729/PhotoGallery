@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3_styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="aboutMe1/index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <!-- <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a> -->
+    <!-- <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Pricing</a> -->
+    <a href="ContactUs/contactPage.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact Us</a>
+    <a href="SignUp/signup.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Sign Up</a>
+    <a href="Testimonial/index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Testimonials</a>
+
+   
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>Shutter Shotz</b></h1>
+  <p><b>Beautiful Moments Shots !!</b></p>
+  <!-- <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p> -->
+  <button><a href="nature.html">Nature</a></button>
+  <button>Digital Art</button>
+  <button>Wedding</button>
+  <button>Animals</button>
+  <br>
+  <br>
+  <button>Anime</button>
+  <button>Food</button>
+  <button>Business-CEO</button>
+  <!-- <button>Business</button> -->
+</header>
+</div>
+ 
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="Intro/picture1.jpg" style="width:100%">
+    <img src="Intro/picture4.jpg" style="width:100%">
+    <img src="Intro/picture3.jpg" style="width:100%">
+    <img src="Intro/picture10.jpg" style="width:100%">
+    <img src="Intro/picture12.jpg" style="width:100%">
+    <img src="Intro/picture15.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="Intro/picture7.jpg" style="width:100%">
+    <img src="Intro/picture14.jpg" style="width:100%">
+    <img src="Intro/picture5.jpg" style="width:100%">
+    <img src="Intro/picture11.jpg" style="width:100%">
+    <img src="Intro/picture6.jpg" style="width:100%">
+    <!-- <img src="Intro/picture16.jpg" style="width:100%"> -->
+  </div>
+
+  <div class="w3-third">
+    <img src="Intro/picture2.jpg" style="width:100%">
+    <img src="Intro/pitcure8.jpg" style="width:100%">
+    <img src="Intro/picture9.jpg" style="width:100%">
+    <img src="Intro/picture13.jpg" style="width:100%">
+    <img src="Intro/picture16.jpg" style="width:100%">
+    <img src="Intro/picture17.jpg" style="width:100%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+ 
+</body>
+</html>
